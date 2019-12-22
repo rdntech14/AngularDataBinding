@@ -1,0 +1,41 @@
+<h1>Data Binding</h1><br>
+<!-- ******************** Example of String interpolation ************************** -->
+<h4>{{title}}</h4><br><br>
+<!-- ******************** Example of Porperty Binding ************************** -->
+<input type="text" [value]="username"><br><br>
+<label>{{username}}</label><br><br>
+
+<!-- ******************** Example of Envent Binding ************************** -->
+<input type="submit" value="ClickMe" (click)=OnClickDoSomething()><br><br>
+
+<label>Result of Envent Binding</label><br><br>
+{{clickCount}}<br><br>
+
+<!-- ******************** Example of Two Way Binding ************************** -->
+<input type="text" [(ngModel)]="fullName" /><br><br>
+<p>{{fullName}}</p><br><br>
+
+<!-- ******************** Directives - ngFor Example ************************** -->
+
+<label>ngFor example</label><br><br>
+
+<ul *ngFor="let e of employees">
+    <li>{{e.firstName}} : {{e.salary}}</li>
+</ul><br><br>
+
+<!-- ******************** Directives - ngIf else Example ************************** -->
+<label>2 + 5 = </label>
+<input type="text" [(ngModel)]=result><br>
+
+<div *ngIf="7==result; else ExecuteOnElse">  
+    Answer is Correct.  
+</div> 
+<ng-template #ExecuteOnElse>  
+    Answer is incorrect.  
+</ng-template>
+
+<h1 class="text-success"> {{pageName}}</h1>
+
+<h1 class="text-success"> {{pageName}}</h1>
+
+<h1 [ngClass]="messageClasses">{{pageName}}</h1>
