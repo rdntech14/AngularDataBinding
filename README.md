@@ -3,16 +3,31 @@ Angular Data Binding & Directives
 
 **Data Binding**
 
+Communication in between Template and Component
+
 a) Data Flow from Templete to Component
 
 b) Data Flow from Component to Templete
 
 1) String Interpolation
+
+If component has variable ```myHero = "Will"```
+
 ```
 {{myHero}}
 ```
 
+If component has variable ```getScore: number: 10;``` String interpolation expects only string so 10 will be converted to string and then printed
+
+```
+{{ getScore }} 
+```
+
+
 2) Property Binding
+
+*Note: Any html attribute / DOM property can be used for property binding*
+
 ```
 <input type="text" [value]="userName">  
 
@@ -25,6 +40,7 @@ b) Data Flow from Component to Templete
 
 3) Event Binding
 
+*Note - Any HTML / DOM event like onclick etc can be used for event binding, make sure to remove **no** keyword before using it*
 ```
 <button (click)="cookBacon()"></button>
 
