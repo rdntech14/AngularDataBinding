@@ -220,6 +220,19 @@ in html file
 
 ```
 
+ngClass Example - apply ngClass based on expression evaluation
+```<h1 [ngClass]="{successClass: errorStatus==='false'}">{{pageName}}</h1>
+
+```
+
+## ngStyle Example
+```
+<p>
+  [ngStyle] = "{backgroundColor: getColor()}"
+  [ngClass]="{successClass: errorStatus==='false'}">{{pageName}}>
+  This is message from Server
+</p> 
+ ```
 **How to Add BootStrap to Angular project**
 
 Steps:
