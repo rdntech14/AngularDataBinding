@@ -222,7 +222,6 @@ in html file
 
 ngClass Example - apply ngClass based on expression evaluation
 ```<h1 [ngClass]="{successClass: errorStatus==='false'}">{{pageName}}</h1>
-
 ```
 
 ## ngStyle Example
@@ -233,6 +232,18 @@ ngClass Example - apply ngClass based on expression evaluation
   This is message from Server
 </p> 
  ```
+ 
+## How to toggle text message based on button click
+
+Note - If button is clicked message is shown. if button is clicked again message should not shown. If button is clicked message is shown. like wise. 
+
+Add ```showMessage = false``` in component class
+
+```
+<button (click)="showMessage = !showMessage">ClickMe</button>
+```
+This changes the value of showMessage on every click. 
+
 **How to Add BootStrap to Angular project**
 
 Steps:
