@@ -288,7 +288,7 @@ update ```angular.json``` with
 When we want employee variable to be available outside the component
 
 ```
-@Input employee = {name:string, salary:number};
+@Input() employee = {name:string, salary:number};
 ```
 
 When we want employee variable to be available outside the component with different name(alias)
