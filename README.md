@@ -254,6 +254,25 @@ Steps:
 
 *Note : Video https://www.youtube.com/watch?v=GKU0LtH8bzU&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=35*
 
+**Another way**
+install bootstrap in the project - it is add package in dist folder
+
+```
+npm install --save bootstrap
+or 
+npm install --save bootstrap@3
+or 
+npm install --save bootstrap@4
+```
+
+update ```angular.json``` with 
+
+```
+ "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ]
+```
 
 ![Alt text](/controlstate.png?raw=true "Optional Title")
 
