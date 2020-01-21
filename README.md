@@ -263,4 +263,31 @@ Steps:
 1) Developer tools --> Sources --> webpack://--> . --> <add checkpoint>
 2) Augury addin for chrome. 
 
+## Data Binding - pass data from child component to parent component
+
+
+When we want employee variable to be available outside the component
+
+```
+@Input employee = {name:string, salary:number};
+```
+
+When we want employee variable to be available outside the component with different name(alias)
+
+```
+@Input('emp') employee = {name:string, salary:number};
+```
+
+# Type Script Examples
+
+Declaraing ```emp = {}``` shows emp is java script object type  and declaraing ```employee = [] ``` shows employee is array type.
+
+```employee = {name:string, salary:number}``` --> shows employee is a java script object type which has name and salary property
+
+```
+emp = {};
+employee = {name:string, salary:number};
+employee = [];
+```
+
 
