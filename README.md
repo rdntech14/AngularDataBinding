@@ -256,3 +256,11 @@ Steps:
 
 
 ![Alt text](/controlstate.png?raw=true "Optional Title")
+
+
+## Debugging
+
+1) Developer tools --> Sources --> webpack://--> . --> <add checkpoint>
+2) Augury addin for chrome. 
+
+
