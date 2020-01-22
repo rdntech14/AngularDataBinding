@@ -329,8 +329,8 @@ two ways
   ```
   b) In component, we map template local refernce to component refernce varilable and use like this
   ```
-  @ViewChild('serverName') serverNameVar;
-  @ViewChild('serverDesc') serverDescription;
+  @ViewChild('serverName') serverNameVar : ElementRef;
+  @ViewChild('serverDesc') serverDescription : ElementRef;
   ```
-  
+  where ElementRef has to be imported from @angular/core
 
