@@ -333,4 +333,10 @@ two ways
   @ViewChild('serverDesc') serverDescription : ElementRef;
   ```
   where ElementRef has to be imported from @angular/core
+  
+  use like this
+  ```
+  this.serverNameVar.nativeElement.value
+  ```
+
 
