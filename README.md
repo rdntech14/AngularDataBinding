@@ -311,7 +311,8 @@ employee = [];
 
 ## How to get hold of input data field value enter by user
 
-two ways
+3 ways ( 3rd way is not recommended )
+
 1) By two way binding
   a) Create a reference variable in component
   b) use ngModel like```<input type="text" class="form-control" [(ngModel)]="newServerName">```
