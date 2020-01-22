@@ -309,4 +309,28 @@ employee = {name:string, salary:number};
 employee = [];
 ```
 
+## How to get hold of input data field value enter by user
+
+two ways
+1) By two way binding
+  a) Create a reference variable in component
+  b) use ngModel like```<input type="text" class="form-control" [(ngModel)]="newServerName">```
+  
+2) by local reference variable
+  a) create local reference variable ```<input type="text" class="form-control" #newServerName>```
+  b) pass refernce variable as input parameter in event binding ```<button (click)=OnAdd(newServerName);```. It will be     
+     recevied by the method and use it like ```newServerName.value```
+
+3) If we want to recevie multiple local reference then we use ```@ViewChild``` decorator.
+  a) there are two input fields in template with two diffrent local refernce
+  ```
+  <input type="text" class="form-control" [(ngModel)]="serverName">
+  <input type="text" class="form-control" [(ngModel)]="serverDesc">
+  ```
+  b) In component, we map template local refernce to component refernce varilable and use like this
+  ```
+  @ViewChild('serverName') serverNameVar;
+  @ViewChild('serverDesc') serverDescription;
+  ```
+  
 
