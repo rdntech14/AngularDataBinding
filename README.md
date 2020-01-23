@@ -340,4 +340,25 @@ employee = [];
   this.serverNameVar.nativeElement.value
   ```
 
+## Routing
 
+routerLinkActive helps to show link as active ( clicked/selected ) where ```active``` is a active class from bootstrap.
+```
+<li routerLinkActive="active"><a routerLink="/recipes"><Recipes</a></li>
+```
+
+## Routing - clicking a button takes to another page
+
+in template
+```
+<button (click)="OnClickButton()">New Page</button>
+```
+in component, where ```/newpage``` is the route path
+
+```
+this.router.navigate(['/newpage']);
+```
+
+## BootStrap
+
+<li><a style="cursor:pointer;">Edit Recipe</a></li>
