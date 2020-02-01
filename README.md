@@ -361,4 +361,12 @@ this.router.navigate(['/newpage']);
 
 ## BootStrap
 
-<li><a style="cursor:pointer;">Edit Recipe</a></li>
+```<li><a style="cursor:pointer;">Edit Recipe</a></li>```
+
+# State Management
+
+In Angular state can be managed by push subscribe mechenism using RxJS / Subject. Another better way of managing state is NgRx.
+## REDUX
+
+REDUX is state management pattern and used for React but not resistricted for Angular, It can used be used in Angular also, NgRx is Redux implementation for Angular. 
+
