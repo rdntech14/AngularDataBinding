@@ -370,3 +370,17 @@ In Angular state can be managed by push subscribe mechenism using RxJS / Subject
 
 REDUX is state management pattern and used for React but not resistricted for Angular, It can used be used in Angular also, NgRx is Redux implementation for Angular. 
 
+
+Iterrate an array and Get a sub array based on matched value.
+
+```
+const users = [
+  { id: 11, name: 'Adam', age: 23, group: 'editor' },
+  { id: 47, name: 'John', age: 28, group: 'admin' },
+  { id: 85, name: 'William', age: 34, group: 'editor' },
+  { id: 97, name: 'Oliver', age: 28, group: 'admin' }
+];
+
+let res = users.filter(it => it.name.includes('Oli'));
+
+```
