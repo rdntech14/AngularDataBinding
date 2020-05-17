@@ -143,6 +143,14 @@ here `i` wil lreturn ture or false status based on the number is odd or not.
 </tr>
 
 ```
+Another example
+```
+<div *ngIf="displayMessageFlag">
+        <div [ngClass]="{'alert-success':successFlag,'alert-danger':!successFlag}" class="alert" role="alert">
+            {{displayMessage}}
+        </div>
+    </div>
+```
 
 **ngIf**
 
